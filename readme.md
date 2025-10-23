@@ -14,7 +14,7 @@ Minimal Permissions: Only requires the webNavigation permission to monitor when 
 
 🛠️ Installation (Developer Mode)
 
-Since this extension is not yet published on the Chrome Web Store, you can install it easily in Developer Mode:
+If you want you can install it easily in Developer Mode. (It's live here: 'https://chromewebstore.google.com/detail/drive-account-chooser/ddbagfifdmgfeddnhimdloclojjgfpbb')
 
 Download Files: Ensure you have the following files and folders in one directory:
 
