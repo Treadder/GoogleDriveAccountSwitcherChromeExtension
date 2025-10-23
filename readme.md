@@ -85,4 +85,4 @@ Submit: Once all fields are complete, click "Submit for review." The review proc
 
 📝 License
 
-This project is open source and available under the
+IDGAF man
