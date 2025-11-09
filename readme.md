@@ -1,4 +1,4 @@
-[![Available in Chrome Web Store](readme_assets/AvailableInChromeWebstore.png)](YOUR_CHROME_WEB_STORE_LINK_HERE)\
+[![Available in Chrome Web Store](readme_assets/availableInChromeWebstore.png)](YOUR_CHROME_WEB_STORE_LINK_HERE) TODO
 
 ## 📂 G-Switcher: Account Chooser Enforcer
 
@@ -36,25 +36,49 @@ When a match is detected on any of the supported domains, the extension redirect
 
 ---
 
-### 🛠️ Installation (Developer Mode)
+### 💾 Installing in your Chrome browser
 
-The extension is live on the Chrome Web Store: **[Drive Account Chooser](https://chromewebstore.google.com/detail/drive-account-chooser/ddbagfifdmgfeddnhimdloclojjgfpbb)**.
+The extension is live on the Chrome Web Store: **[TODO](https://chromewebstore.google.com/detail/drive-account-chooser/ddbagfifdmgfeddnhimdloclojjgfpbb)**. All you have to do is click the link and hit "**Add to Chrome**".
+
+---
+
+### 🛠️ Want to play with it locally?
 
 If you want to install it manually for development or testing, follow these steps:
 
-1.  **Download Files:** Ensure you have the required files (`manifest.json`, `service_worker.js`, and the `icons/` folder) in one root directory.
-2.  **Open Extensions:** Navigate to `chrome://extensions/` in your Chrome browser.
-3.  **Enable Developer Mode:** Toggle the "**Developer mode**" switch on (usually in the upper right corner).
+1.  **Download Files:** Ensure you have the required files (`manifest.json`, `service_worker.js`, and the `icons/` folder) in one root directory
+
+    ![file for dev setup](readme_assets/tempDevFolder.png)
+
+2.  **Open Extensions:** Navigate to `chrome://extensions/` in your Chrome browser, or open the three-dot menu and go to **Extensions**
+
+    ![extensions shown in chrome menue](readme_assets/extensionsInMenue.png)
+
+3.  **Enable Developer Mode:** Toggle the "**Developer mode**" switch on (usually in the upper right corner)
+
+    ![extensions developer mode toggle](readme_assets/developerMode.png)
+
 4.  **Load Unpacked:** Click the "**Load unpacked**" button.
+
+    ![extensions load unpacked](readme_assets/loadUnpacked.png)
+
 5.  **Select Folder:** Choose the root folder containing your extension files.
 
-The extension will now be installed and running in your browser. You can reload or view logs by clicking _service worker_
+    ![file for dev setup](readme_assets/tempDevFolderSelect.png)
+
+6.  **Develop and reload:** The extension will now be installed and running in your browser. You can make changes and click the refresh icon to test.
+
+    ![extensions reload](readme_assets/refreshIcon.png)
+
+7.  **Logs** View console logs by clicking _service worker_ button
+
+    ![extensions service worker](readme_assets/loadedInDevMode.png)
 
 ---
 
 ### 📦 Packaging and Publishing
 
-If you're ready to distribute your extension, you can package it for manual distribution or submit it to the Chrome Web Store.
+(This section is really a note-to-self for when I write updates).
 
 #### 1. Packaging the Extension (Manual Distribution)
 
@@ -70,7 +94,7 @@ This creates a single `.crx` file for easy installation by others without needin
 
 #### 2. Publishing to the Chrome Web Store (Public Distribution)
 
-To list your extension publicly:
+To list the extension publicly:
 
 1.  **Set Up Developer Account:** Sign in to the [Chrome Web Store Developer Dashboard](https://chrome.google.com/webstore/developer/dashboard) and complete the one-time registration.
 2.  **Prepare Assets:** Create the required promotional images (e.g., a Store Image with dimensions **1280x800**).
