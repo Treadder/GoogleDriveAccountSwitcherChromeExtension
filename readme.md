@@ -105,6 +105,28 @@ To list the extension publicly:
 
 ---
 
+### 🚀 Releasing updates
+
+(This also a note-to-self section).
+
+1. Update `manifest.json` (update the version to a higher number).
+
+2. Package the new version by createing a ZIP file of the entire extension directory. Ensure the manifest.json file is at the root of the ZIP file. You don't need to include `readme_assets`
+
+3. Log into the Chrome Web Store Developer Dashboard, select the extension, and go to the Package Tab. This is where you upload the new extension files.
+
+4. Upload the New Package: Click the button to upload a new package (e.g., "Upload new package"). Select the ZIP file you created in Step 2. The dashboard will process it and detect the new version number and the updated name from your manifest.json.
+
+5. Update the "Store Listing" Tab: You should also check and update the name, description, screenshots, and other details on the Store Listing tab to reflect the new features.
+
+6. Submit for Review: Once you've uploaded the package and updated the listing details, click the Submit for Review button.
+
+7. Note that the Extension ID stays the same.
+
+8. Extension goes through review, and existing users will get the update soon.
+
+---
+
 ### 📝 License
 
 IDGAF man
