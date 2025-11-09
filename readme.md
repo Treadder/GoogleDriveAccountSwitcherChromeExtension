@@ -1,6 +1,6 @@
-## 📂 G-Switcher: Account Chooser Enforcer
+[![Available in Chrome Web Store](AvailableInChromeWebstore.png)](YOUR_CHROME_WEB_STORE_LINK_HERE)\
 
-[![Available in Chrome Web Store](AvailableInChromeWebstore.png)](YOUR_CHROME_WEB_STORE_LINK_HERE)
+## 📂 G-Switcher: Account Chooser Enforcer
 
 This Chrome extension solves the common problem of **Google apps automatically routing logged-in users to their primary account** (`/u/0/`) instead of presenting the account selection screen.
 
