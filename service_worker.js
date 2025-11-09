@@ -1,20 +1,35 @@
-// Listener that fires before a navigation happens.
 chrome.webNavigation.onBeforeNavigate.addListener((details) => {
-    const url = new URL(details.url);
 
-    // 1. Target drive.google.com only.
-    if (url.hostname === "drive.google.com") {
-        
-        // 2. Check if the user is navigating to the root domain with no path or search parameters.
+    // Only act on the main frame navigation (not iframes)
+    if (details.frameId !== 0) {
+        return; 
+    }
+
+    const url = new URL(details.url);
+    const hostname = url.hostname;
+    
+    const googleDomainRegex = /^(drive|mail|sheets|docs|photos|chat|meet)\.google\.com$|^gmail\.com$/
+
+    if (googleDomainRegex.test(hostname)) {
+
         if (url.pathname === "/" && url.search === "") {
-            
-            // 3. This is the known Google URL pattern that forces the Account Chooser prompt
-            // before redirecting to the destination (drive.google.com).
-            const chooserUrl = "https://accounts.google.com/AccountChooser?continue=https://drive.google.com/";
-            
-            // 4. Redirect the current tab to the chooser page.
+                       
+            let continueUrl;
+
+            if (hostname === "gmail.com") {
+                continueUrl = "https://mail.google.com/";
+            } else {
+                continueUrl = `https://${hostname}/`;
+            }
+
+            const chooserUrl = `https://accounts.google.com/AccountChooser?continue=${encodeURIComponent(continueUrl)}`;
+
             chrome.tabs.update(details.tabId, { url: chooserUrl });
         }
     }
-}, { url: [{ hostEquals: "drive.google.com" }] });
-
+}, { 
+    url: [
+        { hostSuffix: "google.com" },
+        { hostSuffix: "gmail.com" } 
+    ] 
+});
