@@ -1,5 +1,7 @@
 ## 📂 G-Switcher: Account Chooser Enforcer
 
+[![Available in Chrome Web Store](AvailableInChromeWebstore.png)](YOUR_CHROME_WEB_STORE_LINK_HERE)
+
 This Chrome extension solves the common problem of **Google apps automatically routing logged-in users to their primary account** (`/u/0/`) instead of presenting the account selection screen.
 
 By installing this extension, navigating to any supported Google domain (like `mail.google.com` or `drive.google.com`) will reliably **force the Google Account Chooser**, allowing you to select which profile you want to access every time.
@@ -46,7 +48,7 @@ If you want to install it manually for development or testing, follow these step
 4.  **Load Unpacked:** Click the "**Load unpacked**" button.
 5.  **Select Folder:** Choose the root folder containing your extension files.
 
-The extension will now be installed and running in your browser.
+The extension will now be installed and running in your browser. You can reload or view logs by clicking _service worker_
 
 ---
 
