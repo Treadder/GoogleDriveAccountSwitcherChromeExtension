@@ -24,11 +24,9 @@ By installing this extension, navigating to any supported Google domain (like `m
 
 ### ⚙️ How It Works
 
-The extension uses the `webNavigation` API to listen for any attempt to navigate to a supported Google homepage. The current pattern matches URLs using the following regular expression:
+The extension uses the `webNavigation` API to listen for any attempt to navigate to a supported Google homepage.
 
-$$\text{^(drive|mail|sheets|docs|photos|chat|meet)\.google\.com$|^gmail\.com$/}$$
-
-When a match is detected, the extension redirects the browser to the specific Google URL designed to show the **Account Chooser**, using the originally requested URL as the `continue` parameter.
+When a match is detected on any of the supported domains, the extension redirects the browser to the specific Google URL designed to show the **Account Chooser**, using the originally requested URL as the `continue` parameter.
 
 > **Example:** Navigating to `https://drive.google.com/` is redirected to:
 > `https://accounts.google.com/AccountChooser?continue=https://drive.google.com/`
@@ -83,4 +81,4 @@ To list your extension publicly:
 
 ### 📝 License
 
-IDGAF do what you want with it
+IDGAF man
