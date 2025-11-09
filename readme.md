@@ -1,4 +1,4 @@
-[![Available in Chrome Web Store](/readme_assets/AvailableInChromeWebstore.png)](YOUR_CHROME_WEB_STORE_LINK_HERE)\
+[![Available in Chrome Web Store](readme_assets/AvailableInChromeWebstore.png)](YOUR_CHROME_WEB_STORE_LINK_HERE)\
 
 ## 📂 G-Switcher: Account Chooser Enforcer
 
