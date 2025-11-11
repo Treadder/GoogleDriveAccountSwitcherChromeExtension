@@ -1,4 +1,4 @@
-[![Available in Chrome Web Store](readme_assets/availableInChromeWebstore.png)](YOUR_CHROME_WEB_STORE_LINK_HERE) TODO
+[![Available in Chrome Web Store](readme_assets/availableInChromeWebstore.png)](https://chromewebstore.google.com/detail/g-switcher/ddbagfifdmgfeddnhimdloclojjgfpbb?authuser=0&hl=en)
 
 ## 📂 G-Switcher
 
@@ -38,7 +38,7 @@ When a match is detected on any of the supported domains, the extension redirect
 
 ### 💾 Installing in your Chrome browser
 
-The extension is live on the Chrome Web Store: **[TODO](https://chromewebstore.google.com/detail/drive-account-chooser/ddbagfifdmgfeddnhimdloclojjgfpbb)**. All you have to do is click the link and hit "**Add to Chrome**".
+The extension is live on the Chrome Web Store: **[here is the link](https://chromewebstore.google.com/detail/g-switcher/ddbagfifdmgfeddnhimdloclojjgfpbb?authuser=0&hl=en)**. All you have to do is click the link and hit "**Add to Chrome**".
 
 ---
 
